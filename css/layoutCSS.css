@@ -1,0 +1,800 @@
+
+/*Layout pour le commun sans modification du responsiv*/
+body{
+    background-color:gray ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+}  
+article {
+    flex: 60%;
+}
+#flexCote {
+    flex: 20%;
+    background-color: rgb(110, 108, 108);
+}
+
+@media screen and (min-width : 1000px) and (max-width : 2999px){
+/*Layout pour le commun*/
+header{
+    background-image: url(../../resources/images/headerLight2.jpg);
+    background-size: cover;
+    height: fit-content;
+    font-family: 'Walter Turncoat';
+    color:aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+}
+    h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    h2{
+        font-family: 'Walter Turncoat';
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+    h3{
+        font-family: 'Walter Turncoat';
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    h4{
+        font-family: 'Walter Turncoat';
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+/*Header pour toutes les pages*/
+header{
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 50%;
+}
+
+/*Layout pour la barre de navigation*/
+
+nav#menu{
+    font-family: 'Walter Turncoat';
+    align-items: center;
+    padding-left: 22%;
+    display: flex;
+    margin-top: 130px;
+    background-color: rgb(97, 94, 94) ;
+    
+}
+nav#menu ul {
+    margin: 20px;
+    padding : 0;
+}
+
+nav#menu ul li{
+    margin : 15px;
+}
+
+ul li a{
+    color:aliceblue;
+    text-decoration: none;
+}
+a:link{
+    color:aliceblue;
+}
+
+ul li a:hover, a.current{
+    color: rgb(102, 18, 18);
+    text-decoration:overline;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul#accueil{
+    list-style-image: url(../../resources/icones/d20_32.png);
+    
+}
+ul#passion{
+    list-style-image: url(../../resources/icones/vampire32.png);
+
+}
+ul#statistiques{
+    list-style-image: url(../../resources/icones/flying-bat32.png);
+
+}
+ul#contact{
+    list-style-image: url(../../resources/icones/cercueil32.png);
+}
+ul#logjoueur{
+    list-style-image: url(../../resources/icones/dragon32.png);
+
+}
+/*Layout pour le footer, commun sur toutes les pages*/
+footer{
+    background-image: url(../images/footerLight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    font-family: 'Walter Turncoat';
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    padding-left: 45%;
+
+}
+
+/**********************************************************/
+
+/*Layout pour la page d'accueil*/
+div#chapitresAccueil{
+    display: flex;
+    justify-content: center;
+    background-color:gray ;
+}
+
+img#cthulhu{
+    width: 500px;
+    border-radius: 5px;
+    border-top-right-radius: 5px;
+    align-self: center;
+}
+
+section#Introduction
+{
+    padding-right: 20px;
+    padding-left: 40px;
+    font-size: 18px;
+    display:flex; 
+    flex-direction:column;
+    font-family: 'Cabin';
+    text-align: justify;
+}
+
+a#source
+{
+    color:black;
+}
+article h2{
+    text-align: center;
+
+}
+article h3{
+    text-align: center;
+}
+
+section#articleSuite{
+    padding-right: 20px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    display:flex; 
+    flex-direction:column;
+    font-family: 'Cabin';
+}
+
+p#recette
+{
+    font-family: 'Cabin';
+    text-align: justify;
+    
+}
+
+img#wh40k{
+    border-radius: 10px;
+    width: 400px;
+    align-self: center;
+}
+
+
+
+/**********************************************************/
+
+/*Layout page "Passion" */
+div#chapPassion
+{   display: flex;
+    justify-content: center;
+}
+section#lasoupe
+{
+    padding-left : 40px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-family: 'Cabin';
+    font-size: 18px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+
+}
+img#chroniques
+{
+    border-radius: 6px;
+    width: 500px;
+    align-self: center;
+}
+img#vampireYellow{
+    padding-top: 5px;
+    border-radius: 8px;
+    width: 400px;
+    align-self: center;
+}
+img#vampireBrujah{
+    padding-top: 5px;
+    border-radius: 8px;
+    width: 400px;
+    align-self: center;
+}
+.clan{
+    font-weight: bold;
+}
+img#vampireTremere
+{
+    padding-top: 5px;
+    border-radius: 8px;
+    width: 400px;
+    align-self: center;
+}
+
+
+/**********************************************************/
+
+/*Layout pour les statistiques*/
+div#chapStats{
+    display: flex;
+    justify-content: center;
+}
+section#analyse
+{
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom:10px;
+    font-family: 'Cabin';
+    font-size: 18px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+p#introStat{
+    margin-top: 10px;
+}
+p#statParticipant{ 
+    margin-left: 0;
+    text-align: justify;
+}
+p#statAge{
+    margin-top: 0;
+}
+ul#age{
+    margin-top:0;
+    margin-bottom: 5px;
+    padding : 10px;
+}
+img#graph1
+{
+    align-self: center;
+    width: 500px;
+}
+img#graph2
+{
+    align-self: center;
+    width: 500px;
+}
+img#graph3
+{
+    align-self: center;
+    width: 500px;
+}
+img#graph4
+{
+    align-self: center;
+    width: 500px;
+}
+img#graph5
+{
+    align-self: center;
+    width: 500px;
+}
+
+/**********************************************************/
+
+/*Layout pour la page de contact*/
+div#formContact{
+    display: flex;
+    justify-content: center;
+    
+}
+section#formContact
+{   padding-left: 40px;
+    padding-bottom: 10px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+p#starChamp
+{
+    font-family: 'cabin';
+    font-size: 14px;
+    font-style: italic;
+}
+p#subTitle{
+    font-family: 'cabin';
+    font-size: 18px;
+}
+label#genreF
+{
+    font-family: 'cabin';
+    font-size: 18px;
+}
+label#genreH
+{
+    font-family: 'cabin';
+    font-size: 18px;
+}
+label#genreA
+{
+    font-family: 'cabin';
+    font-size: 18px;
+}
+label#infoN{
+    display: block;
+    font-family: 'Cabin';
+    font-size: 18px;
+}
+label#infoP{
+    display: block;
+    font-family: 'Cabin';
+    font-size: 18px;
+}
+label#infoM{
+    display: block;
+    font-family: 'Cabin';
+    font-size: 18px;
+}
+label#remarques
+{
+    display: block;
+    font-family: 'Cabin';
+    font-size: 18px;
+}
+input{
+    font-family: 'Cabin';
+    font-size: 18px;
+}
+input[type = text]
+{
+    border-radius: 5px;
+}
+input[type = button]
+{
+    border-radius: 3px;
+}
+textarea{
+    border-radius: 5px;
+    height: 150px;
+}
+
+/**********************************************************/
+
+/*Layout pour le login des joueurs*/
+div#logjoueur
+{
+    display: flex;
+    justify-content: center;
+}
+section#failConnect
+{   padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-family: 'Cabin';
+    font-size: 18px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2#echecBestial
+{
+    margin-bottom: 0;
+    font-size: 30px;
+}
+h3#echecBestial{
+    color: rgb(102, 18, 18);
+    font-size: 25px;
+    margin-top: 0;
+}
+p#logJ
+{
+    margin-top: 0;
+}
+}
+
+
+/**********************************************************/
+/**********************************************************/
+         /*********RESPONSIV MINI****************/
+@media  screen and (min-width :300px) and (max-width:999px)
+{
+/*Layout pour le commun*/
+/*MODIFIER LE FOOTER*/
+h1{
+    font-family: 'Walter Turncoat';
+    font-size: 45px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h2{
+    font-family: 'Walter Turncoat';
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h3{
+    font-family: 'Walter Turncoat';
+    font-size: 20px;
+    margin-bottom: 0;
+}
+h4{
+    font-family: 'Walter Turncoat';
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*Header pour toutes les pages*/
+header{
+    background-image: url(../../resources/images/headerLight2.jpg);
+    background-size:cover;
+    height: fit-content;
+    font-family: 'Walter Turncoat';
+    color:aliceblue;
+    margin-top: 0;
+    width: 100%;
+    
+    justify-content: center;
+}
+/*Layout pour la navigation*/
+nav#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Walter Turncoat';
+    margin-top: 0;
+    background-color: rgb(97, 94, 94) ;
+    
+}
+nav#menu ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav#menu ul li{
+    margin : 0;
+}
+
+ul li a{
+    color:aliceblue;
+    text-decoration: none;
+}
+a:link{
+    color:aliceblue;
+}
+
+ul li a:hover, a.current{
+    color: rgb(102, 18, 18);
+    text-decoration:overline;
+    font-weight: bold;
+    font-size: 18px;
+}
+ul li a:hover, a.current{
+    color: rgb(102, 18, 18);
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/**********************************************************/
+
+/*Layout pour la page d'accueil*/
+div#chapitresAccueil{
+    display: flex;
+    justify-content: center;
+    background-color:gray ;
+}
+
+img#cthulhu{
+    width: 250px;
+    border-radius: 5px;
+    border-top-right-radius: 5px;
+    align-self: center;
+}
+
+section#Introduction
+{
+    padding-right: 30px;
+    padding-left: 40px;
+    font-size: 15px;
+    display:flex; 
+    flex-direction:column;
+    font-family: 'Cabin';
+    text-align: justify;
+}
+
+a#source
+{
+    color:black;
+}
+article h2{
+    text-align: center;
+
+}
+article h3{
+    text-align: center;
+}
+
+section#articleSuite{
+    padding-right: 30px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    display:flex; 
+    flex-direction:column;
+    font-family: 'Cabin';
+}
+h3#recette
+{
+    padding-left: 5px;
+}
+p#recette
+{
+    font-family: 'Cabin';
+    text-align: justify;
+}
+
+img#wh40k{
+    border-radius: 10px;
+    width: 250px;
+    align-self: center;
+}
+
+/**********************************************************/
+
+/*Layout pour la page Passion*/
+div#chapPassion
+{   display: flex;
+    justify-content: center;
+}
+section#lasoupe
+{
+    padding-right: 30px;
+    padding-left: 40px;
+    font-size: 15px;
+    display:flex; 
+    flex-direction:column;
+    font-family: 'Cabin';
+    text-align: justify;
+}
+
+
+img#chroniques
+{
+    border-radius: 6px;
+    width: 250px;
+    align-self: center;
+}
+img#vampireYellow{
+    padding-top: 5px;
+    border-radius: 8px;
+    width: 250px;
+    align-self: center;
+}
+img#vampireBrujah{
+    padding-top: 5px;
+    border-radius: 8px;
+    width: 250px;
+    align-self: center;
+}
+.clan{
+    font-weight: bold;
+}
+img#vampireTremere
+{
+    padding-top: 5px;
+    border-radius: 8px;
+    width: 250px;
+    align-self: center;
+    padding-bottom: 10px;
+}
+
+
+/**********************************************************/
+
+/*Layout pour les statistiques*/
+div#chapStats{
+    display: flex;
+    justify-content: center;
+}
+section#analyse
+{
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom:10px;
+    font-family: 'Cabin';
+    font-size: 15px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+p#introStat{
+    margin-top: 10px;
+}
+p#statParticipant{ 
+    margin-left: 0;
+    text-align: justify;
+}
+p#statAge{
+    margin-top: 0;
+}
+ul#age{
+    margin-top:0;
+    margin-bottom: 5px;
+    padding : 10px;
+}
+img#graph1
+{
+    align-self: center;
+    width: 250px;
+}
+img#graph2
+{
+    align-self: center;
+    width: 250px;
+}
+img#graph3
+{
+    align-self: center;
+    width: 250px;
+}
+img#graph4
+{
+    align-self: center;
+    width: 250px;
+}
+img#graph5
+{
+    align-self: center;
+    width: 250px;
+}
+
+/**********************************************************/
+
+/*Layout pour la page de contact*/
+div#formContact{
+    display: flex;
+    justify-content: center;
+    
+}
+section#formContact
+{   padding-left: 40px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+p#starChamp
+{
+    font-family: 'cabin';
+    font-size: 12px;
+    font-style: italic;
+}
+p#subTitle{
+    font-family: 'cabin';
+    font-size: 12px;
+}
+label#genreF
+{
+    font-family: 'cabin';
+    font-size: 12px;
+}
+label#genreH
+{
+    font-family: 'cabin';
+    font-size: 12px;
+}
+label#genreA
+{
+    font-family: 'cabin';
+    font-size: 12px;
+}
+label#infoN{
+    display: block;
+    font-family: 'Cabin';
+    font-size: 12px;
+}
+label#infoP{
+    display: block;
+    font-family: 'Cabin';
+    font-size: 12px;
+}
+label#infoM{
+    display: block;
+    font-family: 'Cabin';
+    font-size: 12px;
+}
+label#remarques
+{
+    display: block;
+    font-family: 'Cabin';
+    font-size: 12px;
+}
+input{
+    font-family: 'Cabin';
+    font-size: 12px;
+}
+input[type = text]
+{
+    border-radius: 5px;
+}
+input[type = button]
+{
+    border-radius: 3px;
+}
+textarea{
+    border-radius: 5px;
+    height: 150px;
+}
+
+/**********************************************************/
+
+/*Layout pour le login des joueurs*/
+div#logjoueur
+{
+    display: flex;
+    justify-content: center;
+}
+section#failConnect
+{   padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-family: 'Cabin';
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2#echecBestial
+{
+    margin-bottom: 0;
+    font-size: 20px;
+}
+h3#echecBestial{
+    color: rgb(102, 18, 18);
+    font-size: 15px;
+    margin-top: 0;
+}
+p#logJ
+{
+    margin-top: 0;
+}
+
+/**********************************************************/
+
+/*Layout pour le footer*/
+footer{
+    background-image: url(../images/footerLight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    font-family: 'Walter Turncoat';
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+
+}
+}

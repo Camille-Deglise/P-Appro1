@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!--
+    Auteur      : Camille Déglise
+    Date        : 05.04.2023
+    Description : P-WEBSTATIQUE_Projet  
+    -->
+    <link href='https://fonts.googleapis.com/css?family=Walter Turncoat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+    <link rel="stylesheet" href="../../resources/css/layoutCSS.css">
+    <link rel="shortcut icon" href="/icones/dragon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Auteur : C.D, P-WEBSTATIQUE_Projet ETML 2023, page de contact contenant un
+    formulaire simple.">
+    <title>Formulaire de contact</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact </h1>
+       <!-- N'EST FINALEMENT PAS UTILE 
+        <div id="redirectionIcones">
+            <a href="/html/welcomePage.html" ><img id="iconeHome" src="/icones/P-WEBSTAT/d20_32.png" alt="Icône Accueil"></a>
+            <a href="/html/passionPage.html"><img id="iconePassionPage" src="/icones/P-WEBSTAT/vampire32.png" alt="Icône Passion"></a>
+            <a href="/html/statisticPage.html"><img id="iconeStatistiquePage" src="/icones/P-WEBSTAT/chauve-souris32.png" alt="Icône Statistiques"></a>
+            <a href="/html/contactPage.html"><img id="iconeContactPage" src="/icones/P-WEBSTAT/cercueil32.png" alt="Icône Contact"></a>
+            <a href="/html/login.html"><img id="iconeLoginPage" src="/icones/P-WEBSTAT/dragon32.png" alt="Icône Login Joueur"></a>
+        </div>-->
+    </header>
+    
+    <div class="containerAcc">
+        <nav id="menu">
+            <ul id="accueil">
+                <li id="accueil">
+                    <a  href="../html/welcomePage.html">Accueil</a>
+                </li>
+            </ul>
+            <ul id="passion">
+                <li id="passion">
+                    <a href="../html/passionPage.html">Vampire La Mascarade</a>
+                </li>
+            </ul>   
+            <ul id="statistiques">
+                <li id="statistiques"> 
+                    <a href="../html/statisticPage.html">Statistiques</a>
+                </li>
+            </ul>
+            <ul id="contact">
+                <li id="contact">
+                    <a class="current" href="../html/contactPage.html">Contact</a>
+                </li>
+            </ul>
+            <ul id="logjoueur">
+                <li id="logjoueur">
+                    <a href="../html/login.html">Login Joueur</a>
+                </li>
+            </ul> 
+        </nav>
+    </div>
+
+    <div id="formContact">
+        <div id="flexCote"></div>
+        <article>
+            <section id="formContact">
+                <h2>Formulaire de contact</h2>
+                <p id="starChamp">Les champs indiqués d'une étoile sont obligatoires</p>
+                <div class="radiobutton">
+                    <p id="subTitle">Indiquer votre genre(optionnel) <br> </p>
+                    
+                    <div class="radiobutton">
+                        <input name="genre" type="radio">
+                        <label id="genreF">Femme</label>
+                    </div>
+                    <div class="radiobutton">
+                        <input name="genre" type="radio">
+                        <label id="genreH">Homme</label>
+                    </div>
+                    <div class="radiobutton">
+                        <input name="genre" type="radio">
+                        <label id="genreA">Autre</label>
+                    </div>  
+                    <br>
+                </div>
+                <div class="info">
+                    <div class="info">
+                        <label id="infoN">Nom*</label>
+                        <input type="text">
+                    </div>
+                    <br>
+                    <div class="info">
+                        <label id="infoP">Prénom*</label>
+                        <input type="text">
+                    </div>
+                    <br>
+                    <div class="info">
+                        <label id="infoM">Mail*</label>
+                        <input type="text">
+                    </div>
+                    <br>
+                <div class="remarques">
+                    <div class="remarques">
+                        <label id="remarques">Questions, remarques ?</label>
+                        <textarea name="remarques"></textarea>
+                        <input class="button" type="button" value="Envoyer">
+                    </div>
+                </div>
+            </section>
+            
+        </article>
+        <div id="flexCote"></div>
+    </div>
+    <footer>
+        <p> Copyright Camille Déglise - Mai 2023</p>
+    </footer>
+</body>
+</html>
