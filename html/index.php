@@ -17,7 +17,6 @@ include("header.inc.php");
 <head>
     <link href='https://fonts.googleapis.com/css?family=Walter Turncoat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
-    <link href="../css/layoutCSS.css" rel="stylesheet" >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,11 +43,9 @@ include("header.inc.php");
                         Sur la page Vampire La Mascardade, j'aborde un jeu de rôle spécifique et comment il 
                         fonctionne dans les grandes lignes. Il faut le considérer comme un résumé express.
                         <br>
-                        La page de statistiques démontrent quelques données récoltées au sein de l'ETML.
-                        <br>
                         Une page de contact est disponible et la page de login est en cours de construction. 
-                        <br> Elle sera
-                        finalisée lorsque mes connaissances en PHP - SQL seront au top. J'ai eu l'idée de l'intégrer
+                        <br> 
+                        Elle sera finalisée lorsque mes connaissances en PHP - SQL seront au top. J'ai eu l'idée de l'intégrer
                         pour les joueurs avec qui je fais du jeu de rôle. 
                     </p>
                 <h3>Les jeux de rôles sur table ? Késako ? </h3>

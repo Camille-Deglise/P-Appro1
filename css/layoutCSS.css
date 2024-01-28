@@ -237,64 +237,6 @@ img#vampireTremere
 
 /**********************************************************/
 
-/*Layout pour les statistiques*/
-div#chapStats{
-    display: flex;
-    justify-content: center;
-}
-section#analyse
-{
-    padding-left: 40px;
-    padding-right: 20px;
-    padding-bottom:10px;
-    font-family: 'Cabin';
-    font-size: 18px;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-}
-p#introStat{
-    margin-top: 10px;
-}
-p#statParticipant{ 
-    margin-left: 0;
-    text-align: justify;
-}
-p#statAge{
-    margin-top: 0;
-}
-ul#age{
-    margin-top:0;
-    margin-bottom: 5px;
-    padding : 10px;
-}
-img#graph1
-{
-    align-self: center;
-    width: 500px;
-}
-img#graph2
-{
-    align-self: center;
-    width: 500px;
-}
-img#graph3
-{
-    align-self: center;
-    width: 500px;
-}
-img#graph4
-{
-    align-self: center;
-    width: 500px;
-}
-img#graph5
-{
-    align-self: center;
-    width: 500px;
-}
-
-/**********************************************************/
 
 /*Layout pour la page de contact*/
 div#formContact{
@@ -317,21 +259,6 @@ p#starChamp
     font-style: italic;
 }
 p#subTitle{
-    font-family: 'cabin';
-    font-size: 18px;
-}
-label#genreF
-{
-    font-family: 'cabin';
-    font-size: 18px;
-}
-label#genreH
-{
-    font-family: 'cabin';
-    font-size: 18px;
-}
-label#genreA
-{
     font-family: 'cabin';
     font-size: 18px;
 }
@@ -359,18 +286,10 @@ label#remarques
 input{
     font-family: 'Cabin';
     font-size: 18px;
-}
-input[type = text]
-{
     border-radius: 5px;
-}
-input[type = button]
-{
-    border-radius: 3px;
 }
 textarea{
     border-radius: 5px;
-    height: 150px;
 }
 
 /**********************************************************/

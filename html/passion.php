@@ -14,13 +14,7 @@ include("header.inc.php");
 <html lang="fr">
 
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Walter Turncoat' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
-    <link href="../css/layoutCSS.css" rel="stylesheet" >
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Auteur : C.D, P-WEBSTATIQUE_Projet ETML 2023, page dite Passion. Description non-exhaustive
+    <meta name="description" content="Auteur : C.D, Projet P-Appro1, site descriptif jeux de rôle. Description non-exhaustive
     sur le jeu de rôle Vampire La Mascarade avec explications du système de jeu.">
     <title>Vampire La Mascarade</title>
 </head>

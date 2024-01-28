@@ -13,16 +13,7 @@ include("header.inc.php");
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-    <link href='https://fonts.googleapis.com/css?family=Walter Turncoat' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
-    <link href="../css/layoutCSS.css" rel="stylesheet" >
-    <link rel="shortcut icon" href="/icones/dragon.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Auteur : C.D, P-WEBSTATIQUE_Projet ETML 2023, page de contact contenant un
-    formulaire simple.">
+    <meta name="description" content="Auteur : C.D, Projet P-Appro1, site descriptif jeux de rôle, formulaire de contact ">
     <title>Formulaire de contact</title>
 </head>
 
@@ -38,29 +29,25 @@ include("header.inc.php");
                 <h2>Formulaire de contact</h2>
                 <p id="starChamp">Les champs indiqués d'une étoile sont obligatoires</p>
                 
-                <div class="info">
+                <form action="checkForm.php" method= "post">
                     <div class="info">
-                        <label id="infoN">Nom*</label>
-                        <input type="text">
+                        <label for="infoN" id="infoN">Nom*</label>
+                        <input type="text" name="name" id="name" value="">
                     </div>
-                    <br>
                     <div class="info">
-                        <label id="infoP">Prénom*</label>
-                        <input type="text">
+                        <label for="infoP" id="infoP">Prénom*</label>
+                        <input type="text" name="firstname" id="firstname" value="">
                     </div>
-                    <br>
                     <div class="info">
-                        <label id="infoM">Mail*</label>
-                        <input type="text">
+                        <label for="infoM" id="infoM">Mail*</label>
+                        <input type="email" name="mail" id="mail" value="">
                     </div>
-                    <br>
-                <div class="remarques">
                     <div class="remarques">
-                        <label id="remarques">Questions, remarques ?</label>
-                        <textarea name="remarques"></textarea>
-                        <input class="button" type="button" value="Envoyer">
+                        <label for="remarques" id="remarques">Questions, remarques ?</label>
+                        <textarea name="remarques" cols= "25" rows="5"></textarea>
+                        <input type="submit" value="Envoyer">
                     </div>
-                </div>
+                </form>
             </section>
             
         </article>

@@ -15,21 +15,13 @@ include("header.inc.php");
 <html lang="fr">
 
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Walter Turncoat' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
-    <link href="../css/layoutCSS.css" rel="stylesheet" >
-    <link rel="shortcut icon" href="/icones/dragon.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Auteur : C.D, P-WEBSTATIQUE_Projet ETML 2023, page de login pour les joueurs. 
-    En cours de construction, message d'explication ludique.">
+    <meta name="description" content="Auteur : C.D, Projet P-Appro1, site descriptif jeux de rôle, page de login en construction">
     <title>Login Joueur</title>
 </head>
 
 <body>
+   
     <header>
-
         <h1>Login - joueurs </h1>
     </header>
 
