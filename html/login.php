@@ -1,14 +1,23 @@
+    <!--
+    Author      : Camille Déglise
+    Date        : 05.04.2023
+    Modifications : 28.01.2024
+    Description : P-Appro1 - dynamisation d'un site web statique avec PHP
+    -->
+
+<?php
+//Session start
+session_start();
+include("header.inc.php");
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <!--
-    Auteur      : Camille Déglise
-    Date        : 05.04.2023
-    Description : P-WEBSTATIQUE_Projet  
-    -->
     <link href='https://fonts.googleapis.com/css?family=Walter Turncoat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
-    <link rel="stylesheet" href="../css/layoutCSS.css">
+    <link href="../css/layoutCSS.css" rel="stylesheet" >
     <link rel="shortcut icon" href="/icones/dragon.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,30 +33,6 @@
         <h1>Login - joueurs </h1>
     </header>
 
-    <div class="containerAcc">
-        <nav id="menu">
-            <ul id="accueil">
-                <li id="accueil">
-                    <a  href="../html/index.html">Accueil</a>
-                </li>
-            </ul>
-            <ul id="passion">
-                <li id="passion">
-                    <a href="../html/passion.html">Vampire La Mascarade</a>
-                </li>
-            </ul>   
-            <ul id="contact">
-                <li id="contact">
-                    <a href="../html/contact.html">Contact</a>
-                </li>
-            </ul>
-            <ul id="logjoueur">
-                <li id="logjoueur">
-                    <a class="current" href="../html/login.html">Login Joueur</a>
-                </li>
-            </ul> 
-        </nav>
-    </div>
     <div id="logjoueur">
         <div id="flexCote"></div>
         <article>
@@ -69,7 +54,7 @@
         </article>
         <div id="flexCote"></div>
     </div>
-    <footer>
-        <p> Copyright Camille Déglise - Mai 2023</p>
-    </footer>
+    <?php 
+    include("footer.inc.php");
+    ?>
 </body>
