@@ -277,7 +277,7 @@ label#infoM{
     font-family: 'Cabin';
     font-size: 18px;
 }
-label#remarques
+label#questionUser
 {
     display: block;
     font-family: 'Cabin';
@@ -642,7 +642,7 @@ label#infoM{
     font-family: 'Cabin';
     font-size: 12px;
 }
-label#remarques
+label#questionUser
 {
     display: block;
     font-family: 'Cabin';

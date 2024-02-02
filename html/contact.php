@@ -42,9 +42,9 @@ include("header.inc.php");
                         <label for="infoM" id="infoM">Mail*</label>
                         <input type="email" name="mail" id="mail" value="">
                     </div>
-                    <div class="remarques">
-                        <label for="remarques" id="remarques">Questions, remarques ?</label>
-                        <textarea name="remarques" cols= "25" rows="5"></textarea>
+                    <div class="questionUser">
+                        <label for="questionUser" id="questionUser">Vos interrogations*</label>
+                        <textarea name="questionUser" cols= "25" rows="5"></textarea>
                         <input type="submit" value="Envoyer">
                     </div>
                 </form>
