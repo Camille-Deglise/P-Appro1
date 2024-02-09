@@ -12,8 +12,8 @@ CREATE TABLE t_visitor(
    idVisitor INT AUTO_INCREMENT,
    firstName VARCHAR(150) NOT NULL,
    lastName VARCHAR(150) NOT NULL,
-   adressMail VARCHAR(250) NOT NULL,
-   messageForm TEXT,
+   email VARCHAR(250) NOT NULL,
+   `message` TEXT,
    PRIMARY KEY(idVisitor)
 );
 

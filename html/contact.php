@@ -32,19 +32,19 @@ include("header.inc.php");
                 <form action="checkForm.php" method= "post">
                     <div class="info">
                         <label for="infoN" id="infoN">Nom*</label>
-                        <input type="text" name="name" id="name" value="">
+                        <input type="text" name="lastName" id="lastName" value="">
                     </div>
                     <div class="info">
                         <label for="infoP" id="infoP">Prénom*</label>
-                        <input type="text" name="firstname" id="firstname" value="">
+                        <input type="text" name="firstName" id="firstName" value="">
                     </div>
                     <div class="info">
                         <label for="infoM" id="infoM">Mail*</label>
                         <input type="email" name="mail" id="mail" value="">
                     </div>
                     <div class="questionUser">
-                        <label for="questionUser" id="questionUser">Vos interrogations*</label>
-                        <textarea name="questionUser" cols= "25" rows="5"></textarea>
+                        <label for="message" id="message">Vos interrogations*</label>
+                        <textarea name="message" cols= "25" rows="5"></textarea>
                         <input type="submit" value="Envoyer">
                     </div>
                 </form>
