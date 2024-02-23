@@ -40,7 +40,7 @@ include("header.inc.php");
                     </div>
                     <div class="info">
                         <label for="infoM" id="infoM">Mail*</label>
-                        <input type="email" name="mail" id="mail" value="">
+                        <input type="email" name="email" id="email" value="">
                     </div>
                     <div class="questionUser">
                         <label for="message" id="message">Vos interrogations*</label>

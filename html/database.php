@@ -51,15 +51,11 @@ class Database
         
         $req = $this->connector->prepare($query);
        
-        foreach($binds as $bind) {
-            echo "<pre>";
-            var_dump($bind[0]);
-            var_dump($bind[1]);
-            var_dump($bind[2]);
-                echo "</pre>";
+        foreach($binds as $bind) {  
             $req -> bindValue($bind[0], $bind[1], $bind[2]);
         }
-        $req->execute();
+
+        $req-> execute();
         return $req;
     }
 
@@ -79,19 +75,20 @@ class Database
      */
     public function addVisitor($datas)
     {
+        
         $firstName = $datas["firstName"];
         $lastName = $datas["lastName"];
-        $mail = $datas["mail"];
+        $email = $datas["email"];
         $message = $datas["message"];
 
-        $query = "INSERT INTO t_visitor(firstName, lastName, email, `message`)
-        VALUES (:firstName, :`lastName`, :mail, :`message`)";
+        $query = "INSERT INTO t_visitor(firstName, lastName, email, message)
+        VALUES (:firstName, :lastName, :email, :message)";
 
         $binds = [
-            ['firstName', $firstName, PDO::PARAM_STR],
-            ['lastName', $lastName, PDO::PARAM_STR],
-            ['mail', $mail, PDO::PARAM_STR],
-            ['message', $message, PDO::PARAM_STR]
+            [':firstName', $firstName, PDO::PARAM_STR],
+            [':lastName', $lastName, PDO::PARAM_STR],
+            [':email', $email, PDO::PARAM_STR],
+            [':message', $message, PDO::PARAM_STR]
         ];
 
         $this->queryPrepareExecute($query, $binds);

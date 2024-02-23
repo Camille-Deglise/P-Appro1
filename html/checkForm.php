@@ -7,10 +7,11 @@
 * Affichage des erreurs dans un tableau 
 */
 
-   echo "<pre>";
-   var_dump($_POST);
-   echo "</pre>";
+   //echo "<pre>";
+   //var_dump($_POST);
+   //echo "</pre>";
 
+   include("database.php");
 //Validation des données
 
 $errors = array();
@@ -31,7 +32,7 @@ if(!isset($_POST["lastName"]) || ( $_POST["lastName"] == ""
 }
 
 //Vérification de l'adresse mail
-$mailUser = $_POST["mail"];
+$mailUser = $_POST["email"];
 if(!isset($mailUser) || ($mailUser == "") 
 || !preg_match('/^[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}$/', $mailUser))
 {
@@ -52,9 +53,8 @@ foreach($errors as $error) {
 }
 }
 else {
-include("database.php");
-$db = new Database();
-$db ->addVisitor($_POST);
+   $db = new Database();
+   $db ->addVisitor($_POST);
 }
 
 //header('location:');

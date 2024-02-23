@@ -10,10 +10,10 @@ USE db_vampire;
 
 CREATE TABLE t_visitor(
    idVisitor INT AUTO_INCREMENT,
-   firstName VARCHAR(150) NOT NULL,
-   lastName VARCHAR(150) NOT NULL,
+   firstName VARCHAR(150) NOT NULL ,
+   lastName VARCHAR(150) NOT NULL ,
    email VARCHAR(250) NOT NULL,
-   `message` TEXT,
+   `message` TEXT NOT NULL,
    PRIMARY KEY(idVisitor)
 );
 
