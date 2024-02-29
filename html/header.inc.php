@@ -33,7 +33,7 @@
             </ul>
             <ul id="logjoueur">
                 <li id="logjoueur">
-                    <a href="login.php">Login Joueur</a>
+                    <a href="login.php">Connexion - Inscription</a>
                 </li>
             </ul> 
         </nav>

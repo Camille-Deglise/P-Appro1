@@ -1,8 +1,8 @@
     <!--
     Author      : Camille Déglise
     Date        : 05.04.2023
-    Modifications : 28.01.2024
-    Description : P-Appro1 - dynamisation d'un site web statique avec PHP
+    Modifications : 29.02.2024
+    Description : Page de connexion pour les personnes enregistrées ou d'inscriptions.
     -->
 
 <?php
@@ -16,7 +16,7 @@ include("header.inc.php");
 
 <head>
     <meta name="description" content="Auteur : C.D, Projet P-Appro1, site descriptif jeux de rôle, page de login en construction">
-    <title>Login Joueur</title>
+    <title>Connexion - Inscription </title>
 </head>
 
 <body>
@@ -29,19 +29,54 @@ include("header.inc.php");
         <div id="flexCote"></div>
         <article>
             <section id="failConnect">
-                <h2 id="echecBestial">Faire un jet d'Int et de Dex, difficulté 6.</h2>
+                <h3 id="echecBestial">Faire un jet d'Int et de Dex, difficulté 6.</h3>
                 <p id="logJ">
-                    <h3 id="echecBestial">Echec Bestial </h3><br>
-                    <br>
-                    Lorsque vous avez cliqué sur la page de Login Joueur, une vive lumière a éclaté sur le site. <br>
-                    Vous avez ressenti une irrépressible envie de fuir, comme si quelque chose, quelqu'un,
-                    au plus profond de votre être, vous hurlait de courir au loin et vous suppliait de retourner sur la page d'accueil. <br>
-                    <br>
-                    La Bête en vous a gagné ce combat pour ce tour. Vous aurez peut-être plus de chance au prochain
-                    lancé de dés. <br>
-                    <br>
+                <form action="checkLogin.php" method= "post">
+                    <div class="login">
+                        <label for="login" id="login">Login</label>
+                        <input type="text" name="login" id="login" value="">
+                    </div>
+                    <div class="userPwd">
+                        <label for="userPwd" id="userPwd">Mot de passe</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <input type="submit" value="Se connecter">
+                </form>
                 </p>
-            
+                <h3>Pas encore inscrit ?</h3>
+                <p id="inscription">
+                    <div class="inscription">
+                    <form action="checkInscription.php" method="post" id="accountDetail" enctype="multipart/form-data">
+                    
+                    <div class="inscription">
+                        <label class="inscription" for="login" >Login :</label>
+                        <input type="text" name="login" id="login" required>
+                    </div>
+                    <div class="inscription">
+                        <label class="inscription" for="password">Définissez un mot de passe :</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="inscription">
+                        <label class="inscription" for="accountLastName" >Nom :</label>
+                        <input type="text" name="accountLastName" id="accountLastName" required>
+                    </div>
+                    <div class="inscription">
+                        <label class="inscription" for="accountFirstName"> Prénom :</label>
+                        <input type="text" name="accountFirstName" id="accountFirstName" required>
+                    </div>
+                    <div class="inscription">
+                        <label class="inscription" for="accountEmail">Adresse E-mail :</label> 
+                        <input type="text" name="accountEmail" id="accountEmail" required>
+                    </div>
+                    <div class="inscription">
+                        <label class="inscription" for="btnSubmit"></label>
+                        <div class="endForm">
+                            <input class="bg-gray-300 hover:bg-gray-400 h-10 w-16" type="submit" name="btnSubmit" id="btnSubmit" value="Créer le compte">
+                        </div>
+                    </div>
+                </form>
+                    </div>
+                </p>
             </section>
         </article>
         <div id="flexCote"></div>

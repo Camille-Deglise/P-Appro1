@@ -19,13 +19,13 @@ class Database
          try
          {
              // depuis Docker
-             //$this->connector = new PDO('mysql:host=localhost:6033;dbname=db_vampire;charset=utf8' , 'root', 'root');
+             $this->connector = new PDO('mysql:host=localhost:6033;dbname=db_vampire;charset=utf8' , 'root', 'root');
              
              // depuis UWAMP
              //$this->connector = new PDO('mysql:host=localhost:3306;dbname=db_vampire;charset=utf8' , 'root', 'root');
          
              // depuis UWAMP (version Sébeillon)
-             $this->connector = new PDO('mysql:host=localhost;dbname=db_vampire;charset=utf8' , 'root', 'root');
+             //$this->connector = new PDO('mysql:host=localhost;dbname=db_vampire;charset=utf8' , 'root', 'root');
          
  
          }
@@ -75,7 +75,6 @@ class Database
      */
     public function addVisitor($datas)
     {
-        
         $firstName = $datas["firstName"];
         $lastName = $datas["lastName"];
         $email = $datas["email"];
@@ -89,6 +88,33 @@ class Database
             [':lastName', $lastName, PDO::PARAM_STR],
             [':email', $email, PDO::PARAM_STR],
             [':message', $message, PDO::PARAM_STR]
+        ];
+
+        $this->queryPrepareExecute($query, $binds);
+    }
+
+       /**
+     * Méthode pour ajouter un nouvel utilisateur dans la base de données
+     */
+    public function addUser($datas)
+    {
+        $login = $datas["login"];
+        $hashedPassword = password_hash($datas["password"], PASSWORD_DEFAULT);
+        $accountFirstName = $datas["accountFirstName"];
+        $accountLastName = $datas["accountLastName"];
+        $accountEmail = $datas["accountEmail"];
+        
+
+        $query = "INSERT INTO t_user(login, hashedPassword, accountFirstName, accountLastName, accountEmail)
+        VALUES (:login, :hashedPassword, :accountFirstName, :accountLastName, :accountEmail)";
+
+        $binds = [
+            [':login', $login, PDO::PARAM_STR],
+            [':hashedPassword', $hashedPassword, PDO::PARAM_STR],
+            [':accountFirstName', $accountFirstName, PDO::PARAM_STR],
+            [':accountLastName', $accountLastName, PDO::PARAM_STR],
+            [':accountEmail', $accountEmail, PDO::PARAM_STR],
+           
         ];
 
         $this->queryPrepareExecute($query, $binds);

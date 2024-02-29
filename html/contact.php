@@ -29,22 +29,22 @@ include("header.inc.php");
                 <h2>Formulaire de contact</h2>
                 <p id="starChamp">Les champs indiqués d'une étoile sont obligatoires</p>
                 
-                <form action="checkForm.php" method= "post">
+                <form action="checkContact.php" method= "post">
                     <div class="info">
                         <label for="infoN" id="infoN">Nom*</label>
-                        <input type="text" name="lastName" id="lastName" value="">
+                        <input type="text" name="lastName" id="lastName" value="" required>
                     </div>
                     <div class="info">
                         <label for="infoP" id="infoP">Prénom*</label>
-                        <input type="text" name="firstName" id="firstName" value="">
+                        <input type="text" name="firstName" id="firstName" value="" required>
                     </div>
                     <div class="info">
                         <label for="infoM" id="infoM">Mail*</label>
-                        <input type="email" name="email" id="email" value="">
+                        <input type="email" name="email" id="email" value="" required>
                     </div>
                     <div class="questionUser">
                         <label for="message" id="message">Vos interrogations*</label>
-                        <textarea name="message" cols= "25" rows="5"></textarea>
+                        <textarea name="message" cols= "25" rows="5" required></textarea>
                         <input type="submit" value="Envoyer">
                     </div>
                 </form>
