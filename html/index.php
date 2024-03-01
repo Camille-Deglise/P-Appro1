@@ -15,12 +15,8 @@ include("header.inc.php");
 <html lang="fr">
 
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Walter Turncoat' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Auteur : C.D, Projet P-Appro1, site descriptif jeux de rôle, page d'accueil ">
+    <link href="../css/layoutCSS.css" rel="stylesheet" >
     <title>Page d'accueil</title>
 </head>
 
